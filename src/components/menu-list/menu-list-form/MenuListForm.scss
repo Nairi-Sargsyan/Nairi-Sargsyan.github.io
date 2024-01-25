@@ -1,0 +1,41 @@
+.menu__list_filter{
+    padding: 50px 0;
+
+    .inner__text{
+        color: #000;
+    }
+
+    .input__search{
+        background-color: #E1B168;
+        border: none;
+        padding: 10px 15px;
+        color: #000;
+        transition: all 0.3s ease;
+
+        &:focus{
+            outline: 1px solid #292E36;
+        }
+
+        &::placeholder{
+            content: '';
+            color: #000;
+        }
+    }
+
+    .sorting__btn{
+        width: 120px;
+        padding: 10px 15px;
+        border: #E1B168 1px solid;
+        background-color: #E1B168;
+        transition: all .3s ease;
+
+        &:hover{
+            border: #292E36 1px solid;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        &:active{
+            transform: scale(95%);
+        }
+    }
+}

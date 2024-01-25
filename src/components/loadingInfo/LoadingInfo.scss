@@ -1,0 +1,28 @@
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .spiner{
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px #555 dashed;
+        animation: round .7s infinite ease;
+    }
+
+    .spiner-logo{
+        display: block;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+}
+
+@keyframes round {
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}

@@ -1,0 +1,29 @@
+.pupolar-dishes{
+    padding: 100px 0;
+}
+
+.pupolar-dishes__title{
+    width: 25px;
+    border-top: #E1B168 2px solid;
+    border-bottom: #E1B168 2px solid;
+    color: #292E36;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.dishe__name, .dishe__price{
+    color: #292E36;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.2px;
+}
+
+.dishe__text{
+    color: #555;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}

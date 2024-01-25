@@ -1,0 +1,80 @@
+.shopping-basket{
+    background-color: #E8E8E8;
+
+    .border__bottom{
+        border-bottom: 3px solid #292E36;
+    }
+
+    .content__basket_items{
+        border: 2px solid #292E36;
+        background-color: #D7D7D7;
+
+        .item__body{
+            border: 2px solid #292E36;
+            background-color: #FFF8F5;
+            padding: 0 15px 0 0;
+
+            .block__item_counter{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .item__counter_btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #FFF8F5;
+                    border: #FFF8F5 2px solid;
+                    outline: none;
+                    transition: all .3s ease;
+                    
+                    svg{
+                        fill: #000;
+                    }
+
+                    &:hover{
+                        border: #292E36 2px solid;
+                    }
+                }
+
+                .item__counter{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 5px;
+                    min-width: 30px;
+                    min-height: 30px;
+                    background-color: #fff;
+                    border: 1px solid #292E36;
+                }
+            }
+        }
+
+        .item__delete{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 0, 0);
+            border: none;
+            color: #efeeee;
+            transition: all .3s ease;
+
+            &:hover{
+                box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+            }
+
+            &:active{
+                transform: scale(95%);
+            }
+        }
+    }
+    
+    .content__info{
+        border: 2px solid #292E36;
+        background-color: #D7D7D7;
+    }
+}

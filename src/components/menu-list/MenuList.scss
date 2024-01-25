@@ -1,0 +1,18 @@
+.menu__list_body{
+    background-color: #FFF8F5;
+}
+
+.menu__list_title{
+    padding: 10px 0;
+    background-color: #292E36;
+
+    .content__aside_title, .inner__title, .inner__text{
+        color: #fff;
+    }
+
+    .title__block_content{
+        display: flex;
+        justify-content: center;
+    }
+}
+

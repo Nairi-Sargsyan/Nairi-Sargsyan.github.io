@@ -1,0 +1,38 @@
+.service{
+    padding: 100px 0;
+    background-color: #292E36;
+}
+
+.title__block{
+    display: flex;
+    justify-content: start;
+    width: 85px;
+    border-top: 2px solid #E1B168;
+    border-bottom: 2px solid #E1B168;
+}
+
+.service__title{
+    margin: 0;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.service__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid #323841;
+}
+
+.card__text{
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.2px;
+}
+

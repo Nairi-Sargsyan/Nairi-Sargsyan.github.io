@@ -1,0 +1,38 @@
+.about-us{
+    background-color: #FFF8F5;
+}
+
+.info__text_title{
+    color: #292E36;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.2px;
+}
+
+.info__text_subtitle{
+    color: #555;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+
+.inner__title{
+    color: #292E36;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+}
+
+.inner__text{
+    color: #555;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 380px) {
+    .info__reservation{
+        flex-wrap: wrap;
+    }
+}

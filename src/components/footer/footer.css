@@ -1,0 +1,60 @@
+.footer{
+    padding-top: 150px;
+    background-color: #292E36;
+}
+
+.page__link{
+    color: #FFF;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    transition: border .5s ease;
+}
+
+.page__link:hover{
+    text-decoration: underline;
+}
+
+.contact__link{
+    color: #E1B168;
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.contact__link:hover{
+    color: #fff;
+}
+
+.subscribe__form input{
+    width: 100%;
+    height: 70px;
+    padding: 0 15px;
+    background-color: #ffffff00;
+    border: 2px solid #858585;
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+}
+
+.subscribe__form input::placeholder{
+    content: '';
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+}
+
+.subscribe__form input:focus{
+    outline: none;
+}

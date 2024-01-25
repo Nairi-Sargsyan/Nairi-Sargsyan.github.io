@@ -1,0 +1,272 @@
+.header{
+    position: relative;
+    background-color: #292E36;
+    z-index: 1;
+}
+
+/* Open Navbar Logo */
+
+.navbar-logo{
+    border-bottom: 2px solid #5C6168;
+}
+
+.navbar__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 295px;
+    min-height: 73px;
+    flex-shrink: 0;
+    border: 2px solid #E1B168;
+    background-color: #292E36;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.navbar__contact:hover{
+    background-color: #e1b168;
+    color: #292E36;
+}
+
+.navbar__contact:active{
+    transform: scale(95%);
+}
+
+.navbar__reservation{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    min-width: 295px;
+    min-height: 73px;
+    flex-shrink: 0;
+    border: 2px solid #E1B168;
+    background-color: #E1B168;
+    color: #292E36;
+    text-align: center;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.44px;
+    transition: all .3s ease;
+}
+
+.navbar__reservation:hover{
+    background-color: #ffffff36;
+    color: #FFF;
+}
+
+.navbar__reservation:active{
+    transform: scale(95%);
+}
+
+/* Close Navbar Logo */
+
+/* Open Navbar Menu List */
+
+.navbar-nav a{
+    color: #FFF !important;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    transition: all .3s ease;
+}
+
+.navbar-nav a:hover{
+    color: #E1B168 !important;
+}
+
+.navbar-nav .active{
+    color: #E1B168 !important;
+}
+
+/* Close Navbar Menu List */
+
+/* Close Navbar Social List */
+.social__instagram, .social__facebook, .social__twitter, .social__pinterest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.social__instagram:hover{
+    background-color: #ff0048;
+}
+
+.social__facebook:hover{
+    background-color: #025dbf;
+}
+
+.social__twitter:hover{
+    background-color: #1D88FE;
+}
+
+.social__pinterest:hover{
+    background-color: #ff0000;
+}
+
+/* Close Navbar Social List */
+
+/* Open Navbar Burger Button */
+
+.menu__burger{
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: #E1B168 2px solid;
+}
+
+.menu__basket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: #E1B168 2px solid;
+
+    svg{
+        color: #E1B168;
+    }
+
+    .basket__counter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -10px;
+        right: -10px;
+        border-radius: 50%;
+        color: #FFF;
+        border: 2px solid #E1B168;
+        background-color: #292E36;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: 0px;
+
+        .counter{
+            position: absolute;
+            top: 10px;
+        }
+    }
+}
+
+.burger{
+    display: block;
+    position: absolute;
+    background-color: #E1B168;
+    width: 30px;
+    height: 2px;
+    top: 10px;
+    left: 8px;
+    transition: all .3s ease;
+}
+
+.burger:nth-child(2){
+    top: 18px;
+}
+
+.burger:nth-child(3){
+    top: 26px;
+}
+
+.burger:nth-child(4){
+    top: 34px;
+}
+
+/* Close Navbar Burger Button */
+
+/* Open Navbar Media */
+
+@media (max-width: 992px){
+    .navbar-logo{
+        border-bottom: none;
+    }
+    
+    .navbar__menu_list{
+        flex-wrap: wrap;
+    }
+
+    .social_list{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        position: fixed;
+        width: 100%;
+    }
+
+    main{
+        padding-top: 80px;
+    }
+
+    .navbar-brand {
+        max-width: 150px;
+    }
+
+    .navbar-logo {
+        position: relative;
+        box-shadow: 1px 1px 10px rgba(225, 177, 104, 0.5);
+        background-color: #292E36;
+        z-index: 99;
+    }
+
+    .navbar__menu_list {
+        height: calc(100vh - 100px);
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        background-color: #292E36;
+        z-index: 90;
+        overflow: auto;
+        transition: all .5s ease;
+
+        .menu_list, .social_list{
+            display: block;
+            position: relative;
+            z-index: 91;
+        }
+    }
+}
+
+/* Close Navbar Media */
+.navbar.active-navbar{
+
+    .burger:nth-child(2){
+        transform: rotateZ(45deg);
+        top: 22px;
+    }
+
+    .burger:nth-child(3){
+        transform: rotateZ(-45deg);
+        top: 22px;
+    }
+
+    .burger:nth-child(1),
+    .burger:nth-child(4){
+        width: 0;
+    }
+
+    .navbar__menu_list {
+        left: 0;
+    }
+}
+
+body.lock{
+    overflow: hidden;
+}
