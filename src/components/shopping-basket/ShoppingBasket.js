@@ -5,7 +5,7 @@ import BasketItem from './basket-item/BasketItem';
 import './ShoppingBasket.scss';
 
 const ShoppingBasket = ({ selectedDish, setSelectedDish }) => {
-    const { cartCounter, setCartCounter } = useContext(MenuContext);
+    const { setCartCounter } = useContext(MenuContext);
     const [checkDoubleItemsInCart, setCheckDoubleItemsInCart] = useState([]);
     const [itemsPrice, setItemsPrice] = useState([]);
     const [price, setPrice] = useState(0);
@@ -29,9 +29,7 @@ const ShoppingBasket = ({ selectedDish, setSelectedDish }) => {
         setItemsPrice(initialItemsPrice);
         setCartCounter(initialItemsPrice.length);
 
-    }, [selectedDish]);
-
-    console.log(cartCounter);
+    }, [selectedDish, setCartCounter]);
 
     const deleteItemCart = (id) => {
         const deleteItem = selectedDish.filter(item => item.id !== id);
@@ -40,11 +38,13 @@ const ShoppingBasket = ({ selectedDish, setSelectedDish }) => {
 
     const priceOfCounter = (id, count) => {
         const updatedItemsPrice = [...itemsPrice];
-        updatedItemsPrice[id] = selectedDish[id].dishesPrice * count;
-        setItemsPrice(updatedItemsPrice);
+        if (selectedDish && selectedDish[id] && selectedDish[id].dishesPrice) {
+            updatedItemsPrice[id] = selectedDish[id].dishesPrice * count;
+            setItemsPrice(updatedItemsPrice);
 
-        const totalSum = updatedItemsPrice.reduce((sum, item) => sum + item);
-        setPrice(totalSum);
+            const totalSum = updatedItemsPrice.reduce((sum, item) => sum + item);
+            setPrice(totalSum);
+        }
     }
 
     return (

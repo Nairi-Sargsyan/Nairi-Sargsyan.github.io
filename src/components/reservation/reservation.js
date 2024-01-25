@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import ReservationInfo from './reservation-info/ReservationInfo';
 import './resevation.scss';
 
@@ -56,11 +56,9 @@ const Reservation = () => {
         dateInputRef.current.style.border = '';
     }
 
-    console.log(clientReservationDate);
-
     return (
         <section className="reservation">
-            <a name='reservation'></a>
+            <a href='true' name='reservation'> </a>
             <div className="container-fluid">
                 <div className="container">
                     <div className="reservation__content">
@@ -93,7 +91,7 @@ const Reservation = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

@@ -1,6 +1,5 @@
 .header__cover{
     position: relative;
-    // z-index: 2;
     background: #292E36;
     padding-top: 30px;
 }
@@ -12,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: left;
 }
 
 .content__title{

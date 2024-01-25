@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 const BasketItem = ({ item, index, deleteItemCart, priceOfCounter }) => {
 
@@ -22,7 +23,7 @@ const BasketItem = ({ item, index, deleteItemCart, priceOfCounter }) => {
     }, [itemCounter, item.dishesPrice]);
 
     useEffect(() => {
-        priceOfCounter(index, itemCounter)
+        priceOfCounter(index, itemCounter);
     }, [itemCounter]);
 
     return (

@@ -16,7 +16,7 @@ const Service = () => {
                                     </div>
                                     <div className="inner__title_text mb-5">
                                         <h3 className="inner__title text-white">Our Great Services</h3>
-                                        <p className="inner__text text-white">The atmosphere set the stage. It’s about more than just a dining room away from your home. food takes the spotlight as guests.</p>
+                                        <p className="inner__text text-white">The atmosphere set the stage. It`s about more than just a dining room away from your home. food takes the spotlight as guests.</p>
                                     </div>
                                 </div>
                             </div>

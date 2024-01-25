@@ -8,7 +8,6 @@ import Popular from '../components/popular/popular';
 import Service from '../components/our-service/our-service';
 import Blog from '../components/blog/blog';
 import Reservation from '../components/reservation/reservation';
-import Footer from '../components/footer/footer';
 
 const Home = () => {
 
@@ -77,14 +76,6 @@ const Home = () => {
             id: 9
         }
     ]);
-
-    // Може окремо створювати свої хуки для того щоб не дублювати код
-    // Для цього потрібно створити окрему функцію за межами компоненту 
-    // та внести в середину весь функціонал який потрібен, без різниці чи це будуть хуки чи колбеки.
-    // Важливо правильно передати цей хук в компонент.
-    // Для цього потрібно виклик функції передати в окремі змінні типу якщо у нас є 2 інпута 
-    // то для двох інпутів окремі зміні передати виклик функції. 
-    // Після цього при ренедері компонента потрібно вказувати змінну і через крапку функцію в середині власного хука.
 
     const addClientComment = (newComment) => {
         setCleintsItemData([newComment, ...cleintsItemData]);
