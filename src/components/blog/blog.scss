@@ -10,38 +10,78 @@
     align-items: center;
 }
 
-.artiсle__image{
+.article__body{
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.activle__btn{
     display: flex;
     justify-content: center;
+    text-decoration: none;
     align-items: center;
-    position: relative;
     width: 100%;
-    height: 384px;
-    background-size: cover;
-    z-index: 1;
-
-    .img__cover{
-        width: 100%;
-    }
-
-    .navbar__reservation{
-        position: absolute;
-    }
+    height: 73px;
+    flex-shrink: 0;
+    border: 2px solid #E1B168;
+    background-color: #fff;
+    color: #E1B168;
+    text-align: center;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.44px;
+    transition: all .3s ease;
 }
 
-.artiсle__image::after{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,.3);
-    z-index: 2;
+.activle__btn:hover{
+    background-color: #E1B168;
+    color: #292E36;
 }
 
-.navbar__reservation{
-    position: relative;
-    z-index: 3;
-}
+
+// .artiсle__image{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     width: 100%;
+//     height: 384px;
+//     background-size: cover;
+//     z-index: 50;
+
+//     .img__cover{
+//         width: 100%;
+//     }
+
+//     .activle__btn{
+//         position: absolute;
+//         z-index: 53;
+//         display: flex;
+//         justify-content: center;
+//         text-decoration: none;
+//         align-items: center;
+//         width: 100%;
+//         height: 73px;
+//         flex-shrink: 0;
+//         border: 2px solid #E1B168;
+//         background-color: #E1B168;
+//         color: #292E36;
+//         text-align: center;
+//         font-size: 22px;
+//         line-height: 33px;
+//         letter-spacing: 0.44px;
+//         transition: all .3s ease;
+//     }
+
+//     .activle__btn:hover{
+//         background-color: #ffffff36;
+//         color: #FFF;
+//     }
+
+//     .activle__btn:active{
+//         transform: scale(95%);
+//     }
+// }
+
+
+

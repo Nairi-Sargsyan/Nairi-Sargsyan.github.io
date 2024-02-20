@@ -7,7 +7,7 @@ const HeaderCover = () => {
             <div className="container">
                 <div className="header__cover_content">
                     <div className="row">
-                        <div className="col-xl-6 col-lg-7">
+                        <div className="col-xl-6 col-lg-7 pt-md-0 pt-5">
                             <div className="content__body">
                                 <h2 className="content__title">Welcome to</h2>
                                 <h2 className="content__title">Restaurant</h2>

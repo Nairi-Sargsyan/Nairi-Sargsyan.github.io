@@ -14,8 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 295px;
-    min-height: 73px;
+    width: 100%;
+    height: 73px;
     flex-shrink: 0;
     border: 2px solid #E1B168;
     background-color: #292E36;
@@ -42,8 +42,8 @@
     justify-content: center;
     text-decoration: none;
     align-items: center;
-    min-width: 295px;
-    min-height: 73px;
+    width: 100%;
+    height: 73px;
     flex-shrink: 0;
     border: 2px solid #E1B168;
     background-color: #E1B168;
@@ -86,7 +86,7 @@
 
 /* Close Navbar Menu List */
 
-/* Close Navbar Social List */
+/* Open Navbar Social List */
 .social__instagram, .social__facebook, .social__twitter, .social__pinterest{
     display: flex;
     justify-content: center;
@@ -209,10 +209,7 @@
     .header{
         position: fixed;
         width: 100%;
-    }
-
-    main{
-        padding-top: 80px;
+        z-index: 1000;
     }
 
     .navbar-brand {
@@ -227,13 +224,15 @@
     }
 
     .navbar__menu_list {
-        height: calc(100vh - 100px);
-        position: fixed;
-        top: 100px;
+        width: auto;
+        height: 100vh;
+        position: absolute;
+        padding: 100px 0 10px 0;
+        top: 0px;
         left: -100%;
         background-color: #292E36;
-        z-index: 90;
-        overflow: auto;
+        z-index: 95;
+        overflow-y: auto;
         transition: all .5s ease;
 
         .menu_list, .social_list{
@@ -244,7 +243,6 @@
     }
 }
 
-/* Close Navbar Media */
 .navbar.active-navbar{
 
     .burger:nth-child(2){
@@ -270,3 +268,5 @@
 body.lock{
     overflow: hidden;
 }
+
+/* Close Navbar Media */

@@ -1,6 +1,6 @@
 .reservation{
     background: url('../../../public/image/reservation__cover__img.png') no-repeat center;
-    background-size: 100% 100%;
+    background-size: cover;
     padding: 140px 0;
 }
 
@@ -12,6 +12,14 @@
     position: relative;
     background: rgba(41, 46, 54, 0.95);
     padding: 140px;
+
+    @media (max-width: 760px) {
+        padding: 50px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 10px;
+    }
 }
 
 .reservation__form{
