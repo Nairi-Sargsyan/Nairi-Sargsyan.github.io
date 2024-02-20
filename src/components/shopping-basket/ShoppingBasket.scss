@@ -1,5 +1,9 @@
 .shopping-basket{
     background-color: #E8E8E8;
+    padding-top: 40px;
+    @media (max-width: 760px) {
+        padding-top: 70px;
+    }
 
     .border__bottom{
         border-bottom: 3px solid #292E36;

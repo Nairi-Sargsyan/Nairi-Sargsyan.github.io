@@ -2,7 +2,7 @@ import './GoingSoonMessage.scss';
 
 const GoingSoonMessage = () => {
     return (
-        <div className="">
+        <div className="py-5">
             <section className='error__message'>
                 <div className="container-fluid">
                     <div className="error__message_content">

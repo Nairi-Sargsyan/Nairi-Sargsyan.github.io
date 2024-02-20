@@ -11,4 +11,12 @@
         font-style: normal;
         font-weight: 400;
     }
+
+    .about_us {
+        padding-top: 40px;
+
+        @media (max-width: 760px) {
+            padding-top: 120px;
+        }
+    }
 }
